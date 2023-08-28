@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-28T14:57:46 IST" name="Default suite" finished-at="2023-08-28T14:57:55 IST" duration-ms="8717">
+    <groups>
+    </groups>
+    <test started-at="2023-08-28T14:57:46 IST" name="Default test" finished-at="2023-08-28T14:57:55 IST" duration-ms="8717">
+      <class name="com.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:46 IST" name="setup" finished-at="2023-08-28T14:57:53 IST" duration-ms="7106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPageTest()[pri:1, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:53 IST" name="loginPageTest" finished-at="2023-08-28T14:57:53 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTest -->
+        <test-method signature="validateLoginTitleTest()[pri:2, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:53 IST" name="validateLoginTitleTest" finished-at="2023-08-28T14:57:53 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginTitleTest -->
+        <test-method signature="addToCartTest()[pri:3, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:53 IST" name="addToCartTest" finished-at="2023-08-28T14:57:54 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method signature="listOfItems()[pri:4, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:54 IST" name="listOfItems" finished-at="2023-08-28T14:57:54 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listOfItems -->
+        <test-method signature="addAddress()[pri:5, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:54 IST" name="addAddress" finished-at="2023-08-28T14:57:54 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method signature="enterAddress()[pri:6, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:54 IST" name="enterAddress" finished-at="2023-08-28T14:57:54 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
+at com.pages.AddAddressPage.login(AddAddressPage.java:40)
+at com.testcases.LoginPageTest.enterAddress(LoginPageTest.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.LoginPageTest@15ca7889]" started-at="2023-08-28T14:57:54 IST" name="tearDown" finished-at="2023-08-28T14:57:55 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
